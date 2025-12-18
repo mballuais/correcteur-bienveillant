@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+.App {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+main {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.input-section textarea {
+  width: 100%;
+  min-height: 250px;
+  padding: 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+  transition: border-color 0.3s;
+}
+
+.input-section textarea:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.counter {
+  text-align: right;
+  margin-top: 10px;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.error-banner {
+  background: #fee;
+  color: #c33;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 15px 0;
+  border-left: 4px solid #c33;
+}
+
+.btn-primary, .btn-secondary {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+}
+
+.btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background: #f0f0f0;
+  color: #333;
+}
+
+.btn-secondary:hover {
+  background: #e0e0e0;
+}
+
+.corrected-text {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  border-left: 4px solid #28a745;
+}
+
+.corrected-text h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.corrected-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.explanations h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.no-errors {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #28a745;
+  padding: 20px;
+}
+
+.card {
+  background: #fff;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 15px;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateX(5px);
+  border-color: #667eea;
+}
+
+.badge {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.error-badge {
+  background: #fee;
+  color: #c33;
+}
+
+.correction-badge {
+  background: #efe;
+  color: #2a2;
+}
+
+.card-error, .card-correction {
+  margin-bottom: 10px;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.highlight {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.arrow {
+  font-size: 1.5rem;
+  color: #667eea;
+  margin: 10px 0;
+}
+
+.card-rule {
+  background: #f0f7ff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 15px;
+  border-left: 3px solid #667eea;
+}
+
+.card-rule strong {
+  color: #667eea;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .input-section textarea {
+    min-height: 200px;
+  }
+}
