@@ -1,0 +1,25 @@
+
+# Dépendances
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Fichiers d'environnement (CLÉ API)
+.env
+server/.env
+
+# Fichiers de build
+client/build/
+dist/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
