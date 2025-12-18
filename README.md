@@ -80,12 +80,6 @@ L'application s'ouvre automatiquement sur `http://localhost:3000`
 - ✅ Interface responsive (mobile/desktop)
 - ✅ Gestion des erreurs API
 
-### Fonctionnalités futures (V2)
-
-- Choix du ton (formel, amical, académique)
-- Historique des corrections (localStorage)
-- Bouton "Copier le texte corrigé"
-
 ## 🏗️ Architecture
 ```
 correcteur-bienveillant/
@@ -108,7 +102,3 @@ correcteur-bienveillant/
 ## 👨‍💻 Auteur
 
 Matteo - Normandie Web School - Décembre 2025
-
-## 📄 Licence
-
-Projet éducatif - NWS
