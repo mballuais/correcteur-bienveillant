@@ -46,7 +46,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>✨ Le Correcteur Bienveillant</h1>
+        <h1> Le Correcteur Bienveillant</h1>
         <p>Corrigez vos textes et comprenez vos erreurs</p>
       </header>
 
@@ -72,18 +72,18 @@ function App() {
               disabled={!text.trim() || loading}
               className="btn-primary"
             >
-              {loading ? '⏳ Analyse en cours...' : '🚀 Corriger et Expliquer'}
+              {loading ? ' Analyse en cours...' : ' Corriger et Expliquer'}
             </button>
           </div>
         ) : (
           <div className="result-section">
             <div className="corrected-text">
-              <h2>📝 Texte corrigé</h2>
+              <h2> Texte corrigé</h2>
               <p>{result.corrected_text}</p>
             </div>
 
             <div className="explanations">
-              <h2>💡 Explications pédagogiques</h2>
+              <h2> Explications pédagogiques</h2>
               {result.explanations.length === 0 ? (
                 <p className="no-errors">✅ Aucune erreur détectée ! Bravo !</p>
               ) : (
@@ -99,7 +99,7 @@ function App() {
                       <span className="highlight">{exp.correction}</span>
                     </div>
                     <div className="card-rule">
-                      <strong>📚 Règle :</strong> {exp.rule}
+                      <strong> Règle :</strong> {exp.rule}
                     </div>
                   </div>
                 ))
